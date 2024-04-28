@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>moreva.</h1>
+        <div class="menu">
+            <a class="menu_link" href="../index.html">Головна</a>
+            <a class="menu_link" href="../pages/articles.html">Статті</a>
+            <a class="menu_link" href="../pages/anchors.html">Каталог</a>
+            <a class="menu_link" href="../pages/gallery.html">Зображення</a>
+            <a class="menu_link" href="../pages/about.html">Про нас</a>
+            <a class="menu_link" href="../pages/contacts.html">Контакти</a>
+        </div>
+    </header>
+    <main>
+        <div class="main_content">
+            <div class="contactsmain">
+                <div class="login">
+                    <h2>Вхід</h2>
+                    <form>
+                        <label class="contact" for="email">Email</label>
+                        <input class="contactinp" type="email" id="email" name="email">
+
+                        <label class="contact" for="password">Password</label>
+                        <input class="contactinp" type="password" id="password" name="password">
+
+                        <input class="contactbutton" type="submit" value="Вхід">
+                    </form>
+                </div>
+                <div class="register">
+                    <form>
+                        <h2>Реєстрація</h2>
+
+                        <label class="contact" for="name"> Ім'я</label>
+                        <input class="contactinp" type="text" id="name" name="name">
+
+                        <label class="contact" for="surname">Прізвище</label>
+                        <input class="contactinp" type="text" id="surname" name="surname">
+
+                        <label class="contact" for="tel">Телефон</label>
+                        <input class="contactinp" type="tel" id="tel" name="tel" value="+380">
+
+                        <label class="contact" for="emailregister">Email</label>
+                        <input class="contactinp" type="email" id="emailregister" name="email">
+
+                        <label class="contact">Стать</label>
+                        <input class="contactgendermale" type="radio" name="gender" id="gendermale" value="male">
+                        <span class="contactgendermale">Чоловік</span>
+                        <input class="contactgenderfemale" type="radio" name="gender" id="genderfemale" value="female">
+                        <span class="contactgenderfemale">Жінка</span>
+                        <br>
+                        <input class="checkboxprivacy" type="checkbox" id="privacypolicy" name="privacypolicy">
+                        <span class="checkboxspan">З умовами <b>політики конфіденціальності</b> ознайомився(лась)</span>
+
+
+                        <input class="contactbutton" type="submit" value="Зареєструватись">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contactus">
+            <form>
+                <fieldset>
+                    <legend class="contactuslegend">Ваш коментар:</legend>
+                    <textarea id="message" name="message" rows="8" cols="150"
+                        placeholder="Напишіть ваш коментар"></textarea>
+                    <input class="contactbutton" type="submit" value="Надіслати">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span>moreva@gmail.com</span>
+    </footer>
+</body>
+
+</html>

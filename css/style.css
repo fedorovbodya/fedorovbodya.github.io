@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header,
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #b3dcfd;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+main {
+  display: block;
+  float: left;
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.maincontent {
+  margin: 5px 10px;
+  width: 100%;
+  height: fit-content;
+}
+
+.menu_link {
+  height: 30px;
+  border: black solid 1px;
+  border-radius: 15px;
+  margin: 10px 10px;
+  background-color: #b3dcfd;
+  font-family: "Pacifico", cursive;
+  padding: 3px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  text-align: center;
+}
+
+.search {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.main {
+  text-align: center;
+  width: 40%;
+  margin: 20px 5%;
+  float: left;
+}
+
+.main_image {
+  width: 100%;
+}
+
+footer {
+  height: 40px;
+}
+
+/* Anchors Page Style*/
+.katalogue {
+  font-family: "Pacifico", cursive;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.nav {
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 10px 0 10px 10%;
+  padding: 0 0 0 5%;
+}
+
+li {
+  margin-left: 15px;
+}
+
+.nav a {
+  display: block;
+  width: 30%;
+  background-color: #b3dcfd;
+  color: black;
+  text-decoration: none;
+  border: black solid 1px;
+}
+
+.upbutton {
+  background-color: #b3dcfd;
+  position: fixed;
+  width: 50px;
+  height: 30px;
+  margin: 20px 0 0 10px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  color: black;
+}
+
+.gender {
+  font-family: "Pacifico", cursive;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.cloth {
+  margin: 5px 10%;
+}
+
+.product {
+  float: left;
+  width: 80%;
+  height: 150px;
+  margin: 10px 10%;
+  border: black solid 1px;
+}
+
+.product_img {
+  height: 150px;
+  width: 10%;
+  display: block;
+  float: left;
+  border-right: black solid 1px;
+}
+
+.product_name {
+  width: 80%;
+  height: 10%;
+  display: block;
+  float: left;
+  margin: 10px 0 0 10px;
+  font-size: 16px;
+}
+
+.product_about {
+  height: 35%;
+  display: block;
+  float: left;
+  width: 70%;
+  margin: 10px 10px;
+}
+
+.price {
+  width: 10%;
+  display: block;
+  float: right;
+  margin: 30px 30px 0 0;
+  font-size: 20px;
+}
+
+.size {
+  height: 10%;
+  display: block;
+  float: left;
+  width: 70%;
+  margin: 5px;
+  margin-left: 10px;
+}
+
+/* About Page */
+
+.info {
+  float: left;
+  width: 80%;
+  height: 700px;
+  margin: 10px 10%;
+}
+
+.infoheader {
+  margin: 5px 0;
+}
+
+.infotext {
+  font-family: monospace;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* Articles Page Style*/
+
+.article {
+  height: 300px;
+  width: 90%;
+  display: block;
+  float: left;
+  margin: 10px 5%;
+  border: black solid 1px;
+  text-align: center;
+}
+
+.data {
+  height: fit-content;
+  width: 100%;
+  display: block;
+  float: left;
+  text-align: center;
+  color: gray;
+  margin: 5px 0;
+}
+
+.article_img {
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+
+.article_img img {
+  height: 100%;
+  width: 300px;
+}
+
+.article_head {
+  float: left;
+  display: block;
+  width: 100%;
+  height: fit-content;
+  padding: 0 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Galery Page Style*/
+.element_row {
+  display: block;
+  float: left;
+  width: 80%;
+  height: fit-content;
+  margin: 10px 10%;
+}
+
+.gallery_element {
+  display: block;
+  float: left;
+  height: 300px;
+  width: 30%;
+  margin: 1%;
+  padding: 3px;
+}
+
+.gallery_img {
+  display: block;
+  float: left;
+  height: 250px;
+  width: 100%;
+}
+.img_about {
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 5px;
+}
+
+/* Contact Page Style*/
+
+.contactsmain {
+  height: auto;
+  width: 80%;
+  display: block;
+  float: left;
+  margin: 0 10%;
+  border: black solid 1px;
+}
+
+.register {
+  display: block;
+  float: left;
+  width: 49%;
+  border-left: black solid 1px;
+}
+
+.login {
+  display: block;
+  float: left;
+  width: 49%;
+}
+
+.contact {
+  font-family: "Pacifico", cursive;
+  margin-top: 10px;
+  margin-left: 1%;
+  float: left;
+  display: block;
+  width: 30%;
+}
+
+.contactinp {
+  padding: 5px;
+  margin-top: 10px;
+  float: left;
+  display: block;
+  width: 60%;
+  margin-left: 1%;
+}
+
+.contactgendermale {
+  margin-right: 10px;
+  margin-top: 10px;
+  display: block;
+  float: left;
+  width: 30%;
+}
+.contactgenderfemale {
+  margin-right: 10px;
+  margin-top: 10px;
+  display: block;
+  float: left;
+  width: 30%;
+}
+
+.checkboxprivacy {
+  display: block;
+  float: left;
+  width: 5%;
+  margin: 10px 0px 10px 10px;
+}
+
+.checkboxspan {
+  width: 90%;
+  margin: 10px 0 10px 0;
+  display: block;
+  float: left;
+}
+
+.contactbutton {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  float: right;
+  color: black;
+  font-family: "Pacifico", cursive;
+  background-color: #b3dcfd;
+  padding: 1px 4px;
+  border-radius: 12px;
+  height: 24px;
+}
+
+.contactus {
+  width: 80%;
+  display: block;
+  float: left;
+  margin: 30px 10% 0;
+}
+
+.contactuslegend {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+
+textarea {
+  width: 99%;
+  display: block;
+  float: left;
+}
