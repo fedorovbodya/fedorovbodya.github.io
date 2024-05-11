@@ -44,17 +44,23 @@
  Header STYLE*/
 .header {
   width: 100vw;
-  height: fit-content;
   float: left;
   height: 700px;
   background: #eeeff1;
 }
-.nav {
+header {
+  width: 100vw;
+  float: left;
+  background-color: #eeeff1;
+}
+.navigation {
+  margin-top: 80px;
+  margin-left: 400px;
   width: 611px;
   height: fit-content;
   display: inline-block;
 }
-.link {
+.nav-item {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,16 +71,21 @@
   font-size: 16px;
   color: #000000;
   margin-right: 42px;
+  margin-bottom: 10px;
 }
-.link:last-child {
+.nav-item:last-child {
   margin: 0;
 }
+.navigation-ticker {
+  display: none;
+}
+
 .header-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 48px;
-  margin-top: calc(257px - 60px);
+  margin-top: calc(257px - 96px);
   display: inline-block;
 }
 .header-text {
@@ -246,7 +257,8 @@ process STYLE*/
   color: white;
   transition: 1.5s;
 }
-.process-title {
+.process-title > h2 {
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   line-height: 37.5px;
@@ -300,4 +312,400 @@ Footer STYLE*/
   font-weight: 400;
   line-height: 21.33px;
   text-align: left;
+}
+
+@media (max-width: 1280px) {
+  .header-title {
+    font-size: 30px;
+  }
+  .navigation {
+    width: 80%;
+    margin-left: 150px;
+    float: left;
+  }
+  .container {
+    padding-top: 60px;
+    width: 80%;
+    margin-left: 150px;
+    float: left;
+  }
+  .process-cont {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer {
+    padding-top: 30px;
+    height: 150px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .container-foot {
+    width: 80%;
+    margin-left: 150px;
+    float: left;
+  }
+  .achievements-item {
+    width: 141px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    margin-right: 10px;
+    height: 50%;
+    width: 30%;
+  }
+  .icon > img {
+    width: 100%;
+    height: 100%;
+  }
+  .number {
+    width: 60%;
+  }
+  .achievements-title {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .navigation {
+    width: 85%;
+    margin-left: 100px;
+    float: left;
+  }
+  .container {
+    padding-top: 40px;
+    width: 85%;
+    margin-left: 100px;
+    float: left;
+  }
+  .process-cont {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .footer {
+    padding-top: 25px;
+    height: 150px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-foot {
+    width: 100%;
+    margin-left: 100px;
+    float: left;
+  }
+  .author {
+    text-align: center;
+  }
+  .footer-text {
+    text-align: center;
+  }
+}
+@media (max-width: 690px) {
+  .container {
+    padding: 5px 10px;
+    width: 100%;
+    margin: 0;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    list-style: none;
+    padding: 30px;
+    margin: 0px;
+    width: 100vw;
+    height: fit-content;
+    top: -150px;
+    left: 0;
+    transition: top 0.2s;
+    z-index: 2;
+    background-color: #34547a;
+  }
+  .btn-nav {
+    color: #34547a;
+    background-color: #eeeff1;
+    padding: 2px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: top 0.23s;
+    z-index: 3;
+    width: 20px;
+  }
+  .btn-nav span {
+    display: block;
+    height: 2px;
+    background-color: #34547a;
+    margin: 5px 0 0;
+    transition: all 0.1s linear 0.23s;
+    position: relative;
+  }
+  .btn-nav span.first {
+    margin-top: 0;
+  }
+  .navigation-ticker:checked ~ .btn-nav {
+    right: 5px;
+    background-color: #34547a;
+  }
+  .navigation-ticker:checked ~ .navigation {
+    top: 0;
+  }
+  .navigation-ticker:checked ~ .btn-nav span.first {
+    transform: rotate(45deg);
+    top: 7px;
+    background-color: #eeeff1;
+  }
+  .navigation-ticker:checked ~ .btn-nav span.second {
+    opacity: 0;
+  }
+
+  .navigation-ticker:checked ~ .btn-nav span.third {
+    transform: rotate(-45deg);
+    top: -7px;
+    background-color: #eeeff1;
+  }
+  .header-text {
+    font-size: 16px;
+    width: 95%;
+    display: inline-block;
+    text-align: center;
+  }
+  .process-video {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 100%;
+  }
+  .process-img {
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+  .process {
+    height: 700px;
+  }
+  .achievements {
+    height: fit-content;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+  }
+  .ach-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .achievements-item {
+    padding: 5px 20px;
+    width: 50%;
+    height: 50px;
+  }
+  .icon {
+    margin-right: 10px;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+  }
+  .icon > img {
+    height: 30px;
+    width: 30px;
+  }
+  .about-text {
+    width: 80%;
+  }
+  .process-text {
+    width: 80%;
+  }
+  .container-foot {
+    width: 80%;
+    margin-left: 0;
+    float: left;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding: 5px 10px;
+    width: 100%;
+    margin: 0;
+    float: left;
+  }
+
+  /*Header STYLE*/
+  .nav {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .header {
+    width: 100vw;
+    height: fit-content;
+    float: left;
+  }
+  .header-title {
+    font-size: 30px;
+    margin-top: 50px;
+    display: block;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .header-text {
+    font-size: 16px;
+    width: 95%;
+    display: inline-block;
+    text-align: center;
+  }
+  .button-header {
+    margin: 30px auto;
+    width: 160px;
+    height: 40px;
+    display: block;
+  }
+
+  /*About STYLE*/
+  .about {
+    height: 200px;
+  }
+  .container-about {
+    padding-top: 30px;
+  }
+  .about-text {
+    margin: 0 auto;
+    height: fit-content;
+    width: 95%;
+    font-size: 16px;
+  }
+
+  /* Achievements Style*/
+  .achievements {
+    height: fit-content;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+  }
+  .ach-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .achievements-item {
+    padding: 5px;
+    width: 50%;
+    height: 50px;
+  }
+  .icon {
+    margin-right: 0px;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+  }
+  .icon > img {
+    height: 30px;
+    width: 30px;
+  }
+  .number {
+    padding: 0 auto;
+    float: left;
+    display: block;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+  }
+  .achievements-title {
+    width: 150px;
+    display: block;
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  /*Process Style*/
+  .process {
+    padding: 20px 0;
+    height: fit-content;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .process-text {
+    font-size: 16px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .process-title {
+    font-size: 24px;
+    line-height: 37.5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .process-video {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 100%;
+  }
+  .process-img {
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+  .play {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  /*footer Style*/
+  .author {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-text {
+    font-size: 13px;
+    text-align: center;
+  }
+  .container-foot {
+    width: 90%;
+    margin: 0 auto;
+    float: left;
+  }
+  .footer {
+    padding-top: 20px;
+    height: 80px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+  }
 }
