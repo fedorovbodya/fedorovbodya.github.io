@@ -1,3 +1,5 @@
+@import 'var';
+
 @mixin roboto-regular() {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -5,7 +7,7 @@
   font-size: 16px;
   line-height: 26.25px;
   text-align: center;
-  color: #727272;
+  color: $text-color;
 }
 
 @mixin roboto-medium() {
@@ -14,7 +16,7 @@
   font-style: normal;
   font-size: 32px;
   line-height: 37.5px;
-  color: #000000;
+  color: $title-color;
 }
 
 @mixin container() {

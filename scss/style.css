@@ -101,7 +101,7 @@
     margin-bottom: 0;
   }
   .btn-nav {
-    color: black;
+    color: #000000;
     padding: 2px;
     position: fixed;
     top: 5px;
@@ -114,7 +114,7 @@
   .btn-nav span {
     display: block;
     height: 2px;
-    background-color: black;
+    background-color: #000000;
     margin: 5px 0 0;
     transition: all 0.1s linear 0.23s;
     position: relative;
@@ -434,7 +434,7 @@
 }
 .play:hover {
   background-color: #34547a;
-  color: white;
+  color: #ffffff;
   transition: 1.5s;
 }
 
