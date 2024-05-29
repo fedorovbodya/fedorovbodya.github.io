@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes square {
+  0% {
+    fill: blue;
+    left: 0;
+    top: 0;
+  }
+  20% {
+    stroke: red;
+    fill: blue;
+    left: 0;
+    top: 0;
+  }
+  40% {
+    stroke: yellow;
+    fill: red;
+    top: 200px;
+    left: 0;
+  }
+  60% {
+    stroke: blue;
+    fill: green;
+    left: 200px;
+    top: 200px;
+  }
+  80% {
+    stroke: green;
+    fill: yellow;
+    left: 200px;
+    top: 0;
+  }
+  100% {
+    fill: blue;
+    left: 0;
+    top: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    stroke: blue;
+    fill: red;
+    left: 50px;
+    top: 0;
+  }
+  20% {
+    stroke: red;
+    fill: blue;
+    top: 0;
+    left: 0;
+  }
+  40% {
+    stroke: blue;
+    fill: red;
+    top: 200px;
+    left: 0;
+  }
+  60% {
+    stroke: yellow;
+    fill: green;
+    left: 200px;
+    top: 200px;
+  }
+  80% {
+    stroke: green;
+    fill: yellow;
+    left: 200px;
+    top: 0;
+  }
+  100% {
+    stroke: blue;
+    fill: red;
+    left: 50px;
+    top: 0;
+  }
+}
+@keyframes rectangle {
+  0% {
+    stroke: yellow;
+    fill: green;
+    left: 100px;
+    top: 0;
+  }
+  20% {
+    stroke: blue;
+    fill: red;
+    top: 0;
+    left: 0;
+  }
+  40% {
+    stroke: yellow;
+    fill: green;
+    left: 0;
+    top: 200px;
+  }
+  60% {
+    stroke: green;
+    fill: yellow;
+    left: 200px;
+    top: 200px;
+  }
+  80% {
+    stroke: red;
+    fill: blue;
+    left: 200px;
+    top: 0;
+  }
+  100% {
+    stroke: yellow;
+    fill: green;
+    left: 100px;
+    top: 0;
+  }
+}
+@keyframes ellipse {
+  0% {
+    stroke: red;
+    fill: blue;
+    left: 200px;
+    top: 0;
+  }
+  20% {
+    stroke: blue;
+    fill: red;
+    top: 0;
+    left: 0;
+  }
+  40% {
+    stroke: yellow;
+    fill: green;
+    left: 0;
+    top: 200px;
+  }
+  60% {
+    stroke: green;
+    fill: yellow;
+    left: 200px;
+    top: 200px;
+  }
+  80% {
+    stroke: red;
+    fill: blue;
+    left: 200px;
+    top: 0;
+  }
+  100% {
+    stroke: red;
+    fill: blue;
+    left: 200px;
+    top: 0;
+  }
+}
+
+.square {
+  position: absolute;
+  animation: square 5s infinite;
+}
+.circle {
+  left: 50px;
+  position: absolute;
+  animation: circle 5s infinite;
+  animation-delay: 1s;
+}
+.rectangle {
+  position: absolute;
+  left: 100px;
+  animation: rectangle 5s infinite;
+  animation-delay: 1.9s;
+}
+.ellipse {
+  left: 200px;
+  position: absolute;
+  animation: ellipse 5s infinite;
+  animation-delay: 2.8s;
+}
