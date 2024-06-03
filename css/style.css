@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header,
+footer {
+  text-align: center;
+}
+.aqua {
+  background-color: #b3dcfd;
+}
+
+.nav-link {
+  height: 30px;
+  border: black solid 1px;
+  border-radius: 15px;
+  margin: 10px 10px;
+  background-color: #b3dcfd;
+  font-family: "Pacifico", cursive;
+  padding: 3px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-image {
+  width: 100%;
+}
+.main-title {
+  position: absolute;
+  color: #2b99f3;
+}
+.main-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-col {
+  order: 3;
+}
+@media (max-width: 991px) {
+  .right-col {
+    order: 2;
+  }
+  .main-col {
+    order: 3;
+  }
+}
+
+.product {
+  width: 100%;
+  display: flex;
+  border: #2b99f3 solid 1px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 575px) {
+  .product {
+    flex-direction: column;
+  }
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+}
+
+.product-name {
+  width: 100%;
+  font-size: 28px;
+}
+
+.product-about {
+  width: 100%;
+}
+table {
+  width: 100%;
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+  width: 30%;
+}
+th {
+  border: 1px solid black;
+}
