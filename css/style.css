@@ -56,10 +56,13 @@ footer {
   order: 3;
 }
 @media (max-width: 991px) {
+  .left-col{
+    order: 1;
+  }
   .right-col {
     order: 2;
   }
-  .main-col {
+  .content-col {
     order: 3;
   }
 }
