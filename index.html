@@ -2,41 +2,70 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <header>
-        <div class="container-fluid aqua">
+        <div class="container-fluid aqua pb-5">
             <div class="row">
-                <h1 class="col-sm-12 p-0">moreva.</h1>
-                <nav class="row col-sm-12">
-                    <div class="col-sm-4 mb-3">
-                        <a class="nav-link" href="./index.html">Головна</a>
+                <h1 class="col-sm-12 p-0 mb-3">moreva.</h1>
+                <nav class="col-sm-12">
+                    <div class="nav-link col-sm-2 m-0">
+                        <a href="./index.html">Головна</a>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <a class="nav-link" href="./index.html">Статті</a>
+                    <div class="nav-link col-sm-2 m-0">
+                        <a href="./index.html">Статті</a>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <a class="nav-link" href="./index.html">Каталог</a>
+                    <div class="nav-link col-sm-2 m-0">
+                        <a class="dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="./index.html">Каталог</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="./index.html">Чоловікам</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./index.html">Жінкам</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <a class="nav-link" href="./index.html">Зображення</a>
+                    <div class="nav-link col-sm-2 m-0">
+                        <a href="./index.html">Зображення</a>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <a class="nav-link" href="./index.html">Про нас</a>
+                    <div class="nav-link col-sm-2 m-0">
+                        <a href="./index.html">Про нас</a>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <a class="nav-link" href="./index.html">Контакти</a>
+                    <div class="nav-link col-sm-2 m-0">
+                        <a class="dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                            href="./index.html">Профіль</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="./index.html">Увійти</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./index.html" >Повідомлення</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./index.html">Мої Замовлення</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./index.html">Кошик</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -47,16 +76,16 @@
             <div id="carouselAutoplaying" class="carousel slide sticky-top" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./images/carousel/carousel1.jpg" class="d-block w-100" alt="carousel1">
+                        <img src="./images/carousel/carousel1.jpg" class="d-block w-100" alt="carousel1" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/carousel/carousel2.jpg" class="d-block w-100" alt="carousel2">
+                        <img src="./images/carousel/carousel2.jpg" class="d-block w-100" alt="carousel2" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/carousel/carousel3.jpg" class="d-block w-100" alt="carousel3">
+                        <img src="./images/carousel/carousel3.jpg" class="d-block w-100" alt="carousel3" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/carousel/carousel4.jpg" class="d-block w-100" alt="carousel4">
+                        <img src="./images/carousel/carousel4.jpg" class="d-block w-100" alt="carousel4" />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
@@ -76,21 +105,21 @@
                 <div class="main col-sm-6 p-0">
                     <h1 class="main-title">Жінкам</h1>
                     <a href="./index.html">
-                        <img src="./images/main_women.jpg" alt="womeninwhite" class="main-image">
+                        <img src="./images/main_women.jpg" alt="womeninwhite" class="main-image" />
                     </a>
                 </div>
                 <div class="main col-sm-6 p-0">
                     <h1 class="main-title">Чоловікам</h1>
                     <a href="./index.html">
-                        <img src="./images/main_man.jpg" alt="maninwhite" class="main-image">
+                        <img src="./images/main_man.jpg" alt="maninwhite" class="main-image" />
                     </a>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-sm-12">
                     <div class="accordion accordion-flush" id="accordionFlush">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
@@ -103,11 +132,15 @@
                                     <div class="man_polo" id="man_polo">
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
-                                                <img class="product-img" src="../images/man_polo1.jpg" alt="man_polo1">
+                                                <img class="product-img" src="../images/man_polo1.jpg"
+                                                    alt="man_polo1" />
                                             </div>
                                             <div class="col-sm-7">
-                                                <h2 class="product-name">ТЕКСТУРОВАНА СОРОЧКА-ПОЛО</h2>
-                                                <p class="product-about">Сорочка-поло з короткими рукавами. Планка з
+                                                <h2 class="product-name">
+                                                    ТЕКСТУРОВАНА СОРОЧКА-ПОЛО
+                                                </h2>
+                                                <p class="product-about">
+                                                    Сорочка-поло з короткими рукавами. Планка з
                                                     ґудзиками спереду.
                                                 </p>
                                             </div>
@@ -135,11 +168,15 @@
                                         </div>
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
-                                                <img class="product-img" src="../images/man_polo2.jpg" alt="man_polo2">
+                                                <img class="product-img" src="../images/man_polo2.jpg"
+                                                    alt="man_polo2" />
                                             </div>
                                             <div class="col-sm-7">
-                                                <h2 class="product-name">ТЕКСТУРОВАНА СОРОЧКА-ПОЛО</h2>
-                                                <p class="product-about">Сорочка-поло з короткими рукавами. Планка з
+                                                <h2 class="product-name">
+                                                    ТЕКСТУРОВАНА СОРОЧКА-ПОЛО
+                                                </h2>
+                                                <p class="product-about">
+                                                    Сорочка-поло з короткими рукавами. Планка з
                                                     ґудзиками спереду.
                                                 </p>
                                             </div>
@@ -167,15 +204,18 @@
                                         </div>
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
-                                                <img class="product-img" src="../images/man_polo3.jpg" alt="man_polo3">
+                                                <img class="product-img" src="../images/man_polo3.jpg"
+                                                    alt="man_polo3" />
                                             </div>
                                             <div class="col-sm-7">
-                                                <h2 class="product-name">ТРИКОТАЖНА СОРОЧКА-ПОЛО З ВІСКОЗОЮ</h2>
-                                                <p class="product-about">Трикотажна футболка зі змішаної штапельної
-                                                    тканини з віскозою.
-                                                    Застібається
-                                                    на ґудзики спереду. Має комір-поло, короткі рукава та окантовку в
-                                                    рубчик по краях.
+                                                <h2 class="product-name">
+                                                    ТРИКОТАЖНА СОРОЧКА-ПОЛО З ВІСКОЗОЮ
+                                                </h2>
+                                                <p class="product-about">
+                                                    Трикотажна футболка зі змішаної штапельної тканини з
+                                                    віскозою. Застібається на ґудзики спереду. Має
+                                                    комір-поло, короткі рукава та окантовку в рубчик по
+                                                    краях.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -219,12 +259,13 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_tshirt1.jpg"
-                                                    alt="man_tshirt1">
+                                                    alt="man_tshirt1" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">БАЗОВА ФУТБОЛКА SLIM FIT</h2>
-                                                <p class="product-about">Футболка вузького крою з круглим коміром і
-                                                    короткими рукавами.
+                                                <p class="product-about">
+                                                    Футболка вузького крою з круглим коміром і короткими
+                                                    рукавами.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -252,12 +293,13 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_tshirt2.jpg"
-                                                    alt="man_tshirt2">
+                                                    alt="man_tshirt2" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">БАЗОВА ФУТБОЛКА SLIM FIT</h2>
-                                                <p class="product-about">Футболка вузького крою з круглим коміром і
-                                                    короткими рукавами.
+                                                <p class="product-about">
+                                                    Футболка вузького крою з круглим коміром і короткими
+                                                    рукавами.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -285,14 +327,15 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_tshirt3.jpg"
-                                                    alt="man_tshirt3">
+                                                    alt="man_tshirt3" />
                                             </div>
                                             <div class="col-sm-7">
-                                                <h2 class="product-name">БЕЗРУКАВКА З НАПИСОМ X PEPO MORENO</h2>
-                                                <p class="product-about">Безрукавка вільного крою з круглим коміром.
-                                                    Контрастний принт
-                                                    спереду та
-                                                    ззаду.
+                                                <h2 class="product-name">
+                                                    БЕЗРУКАВКА З НАПИСОМ X PEPO MORENO
+                                                </h2>
+                                                <p class="product-about">
+                                                    Безрукавка вільного крою з круглим коміром.
+                                                    Контрастний принт спереду та ззаду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -336,14 +379,13 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_jeans1.jpg"
-                                                    alt="man_jeans1">
+                                                    alt="man_jeans1" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ДЖИНСИ RELAXED FIT</h2>
-                                                <p class="product-about">Варені джинси вільного крою з п’ятьма кишенями.
-                                                    Застібаються на
-                                                    блискавку
-                                                    та ґудзик спереду.
+                                                <p class="product-about">
+                                                    Варені джинси вільного крою з п’ятьма кишенями.
+                                                    Застібаються на блискавку та ґудзик спереду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -371,14 +413,14 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_jeans2.jpg"
-                                                    alt="man_jeans2">
+                                                    alt="man_jeans2" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ДЖИНСИ FLARED FIT</h2>
-                                                <p class="product-about">Варені розкльошені джинси з п’ятьма кишенями.
-                                                    Застібаються на
-                                                    блискавку та
-                                                    ґудзик спереду. Контрастні шви по боках і нерівний край унизу.
+                                                <p class="product-about">
+                                                    Варені розкльошені джинси з п’ятьма кишенями.
+                                                    Застібаються на блискавку та ґудзик спереду.
+                                                    Контрастні шви по боках і нерівний край унизу.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -406,14 +448,13 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_jeans3.jpg"
-                                                    alt="man_jeans3">
+                                                    alt="man_jeans3" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ДЖИНСИ STRAIGHT-LEG</h2>
-                                                <p class="product-about">Джинси прямого крою з м’яким вареним ефектом і
-                                                    п’ятьма
-                                                    кишенями.
-                                                    Застібаються на ґудзики спереду.
+                                                <p class="product-about">
+                                                    Джинси прямого крою з м’яким вареним ефектом і
+                                                    п’ятьма кишенями. Застібаються на ґудзики спереду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -441,14 +482,14 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_jeans4.jpg"
-                                                    alt="man_jeans4">
+                                                    alt="man_jeans4" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ДЖИНСИ SLIM CROPPED-FIT</h2>
-                                                <p class="product-about">Варені укорочені джинси вузького крою з п’ятьма
-                                                    кишенями.
-                                                    Застібаються на
-                                                    блискавку та ґудзик спереду.
+                                                <p class="product-about">
+                                                    Варені укорочені джинси вузького крою з п’ятьма
+                                                    кишенями. Застібаються на блискавку та ґудзик
+                                                    спереду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -476,14 +517,13 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_jeans5.jpg"
-                                                    alt="man_jeans5">
+                                                    alt="man_jeans5" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ДЖИНСИ STRAIGHT-LEG</h2>
-                                                <p class="product-about">Джинси прямого крою з м’яким вареним ефектом і
-                                                    п’ятьма
-                                                    кишенями.
-                                                    Застібаються на ґудзики спереду.
+                                                <p class="product-about">
+                                                    Джинси прямого крою з м’яким вареним ефектом і
+                                                    п’ятьма кишенями. Застібаються на ґудзики спереду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -527,13 +567,14 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_hoodie1.jpg"
-                                                    alt="man_hoodie1">
+                                                    alt="man_hoodie1" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ВАРЕНЕ ХУДІ</h2>
-                                                <p class="product-about">Варене худі вільного крою з високим коміром і
-                                                    довгими рукавами.
-                                                    Застібається на блискавку спереду. Кишеня-кенгуру спереду.
+                                                <p class="product-about">
+                                                    Варене худі вільного крою з високим коміром і
+                                                    довгими рукавами. Застібається на блискавку спереду.
+                                                    Кишеня-кенгуру спереду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -561,14 +602,14 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_hoodie2.jpg"
-                                                    alt="man_hoodie2">
+                                                    alt="man_hoodie2" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ХУДІ</h2>
-                                                <p class="product-about">Бавовняне худі з регульованими капюшоном і
-                                                    довгими рукавами.
-                                                    Кишеня-кенгуру
-                                                    спереду, начіс всередині та окантовка в рубчик по краях.
+                                                <p class="product-about">
+                                                    Бавовняне худі з регульованими капюшоном і довгими
+                                                    рукавами. Кишеня-кенгуру спереду, начіс всередині та
+                                                    окантовка в рубчик по краях.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -596,14 +637,16 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_hoodie3.jpg"
-                                                    alt="man_hoodie3">
+                                                    alt="man_hoodie3" />
                                             </div>
                                             <div class="col-sm-7">
-                                                <h2 class="product-name">ДЖИНСОВИЙ СВІТШОТ ІЗ БЛИСКАВКОЮ НА КОМІРІ</h2>
-                                                <p class="product-about">Варений джинсовий світшот із високим коміром і
-                                                    довгими
-                                                    рукавами.
-                                                    Застібається на блискавку на комірі. Еластичні манжети на рукавах.
+                                                <h2 class="product-name">
+                                                    ДЖИНСОВИЙ СВІТШОТ ІЗ БЛИСКАВКОЮ НА КОМІРІ
+                                                </h2>
+                                                <p class="product-about">
+                                                    Варений джинсовий світшот із високим коміром і
+                                                    довгими рукавами. Застібається на блискавку на
+                                                    комірі. Еластичні манжети на рукавах.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -647,14 +690,15 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_shorty1.jpg"
-                                                    alt="man_shorty1">
+                                                    alt="man_shorty1" />
                                             </div>
                                             <div class="col-sm-7">
-                                                <h2 class="product-name">ДЖИНСОВІ ШОРТИ З ПОДЕРТОСТЯМИ</h2>
-                                                <p class="product-about">Варені шорти вільного крою з подертостями та
-                                                    п’ятьма кишенями.
-                                                    Застібаються
-                                                    на ґудзики спереду.
+                                                <h2 class="product-name">
+                                                    ДЖИНСОВІ ШОРТИ З ПОДЕРТОСТЯМИ
+                                                </h2>
+                                                <p class="product-about">
+                                                    Варені шорти вільного крою з подертостями та п’ятьма
+                                                    кишенями. Застібаються на ґудзики спереду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -682,15 +726,14 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_shorty2.jpg"
-                                                    alt="man_shorty2">
+                                                    alt="man_shorty2" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">М’ЯКІ ФАКТУРНІ ШОРТИ</h2>
-                                                <p class="product-about">М’які на дотик шорти вільного крою з еластичним
-                                                    поясом і
-                                                    шнурками.
-                                                    Кишені
-                                                    спереду та прорізні кишені ззаду.
+                                                <p class="product-about">
+                                                    М’які на дотик шорти вільного крою з еластичним
+                                                    поясом і шнурками. Кишені спереду та прорізні кишені
+                                                    ззаду.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -718,14 +761,14 @@
                                         <div class="row product">
                                             <div class="col-sm-3 p-0">
                                                 <img class="product-img" src="../images/man_shorty3.jpg"
-                                                    alt="man_shorty3">
+                                                    alt="man_shorty3" />
                                             </div>
                                             <div class="col-sm-7">
                                                 <h2 class="product-name">ШОРТИ-КАРГО</h2>
-                                                <p class="product-about">Варені шорти вільного крою з п’ятьма кишенями.
-                                                    Застібаються на
-                                                    блискавку та
-                                                    ґудзик спереду. Накладні кишені з клапаном на штанинах.
+                                                <p class="product-about">
+                                                    Варені шорти вільного крою з п’ятьма кишенями.
+                                                    Застібаються на блискавку та ґудзик спереду.
+                                                    Накладні кишені з клапаном на штанинах.
                                                 </p>
                                             </div>
                                             <div class="col-sm-2 right">
@@ -763,11 +806,11 @@
                 <legend>Вхід</legend>
                 <div class="mb-3">
                     <label for="Email-login" class="form-label">Email адреса</label>
-                    <input type="email" class="form-control" id="Email-login">
+                    <input type="email" class="form-control" id="Email-login" />
                 </div>
                 <div class="mb-3">
                     <label for="Password-login" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" id="Password-login">
+                    <input type="password" class="form-control" id="Password-login" />
                 </div>
                 <button type="submit" class="btn btn-primary mb-3">Увійти</button>
             </fieldset>
@@ -775,22 +818,22 @@
                 <legend>Реєстрація</legend>
                 <div class="mb-3">
                     <label for="Email-registration" class="form-label">Email адреса</label>
-                    <input type="email" class="form-control" id="Email-registration">
+                    <input type="email" class="form-control" id="Email-registration" />
                 </div>
                 <div class="mb-3">
                     <label for="Password-registration" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" id="Password-registration">
+                    <input type="password" class="form-control" id="Password-registration" />
                 </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">Телефон</label>
-                    <input placeholder="+380" type="tel" class="form-control" id="tel">
+                    <input placeholder="+380" type="tel" class="form-control" id="tel" />
                 </div>
-                <button type="submit" class="btn btn-primary mb-3">Зареєструватись</button>
-
+                <button type="submit" class="btn btn-primary mb-3">
+                    Зареєструватись
+                </button>
             </fieldset>
         </div>
     </div>
-
 
     <footer>
         <div class="container-fluid aqua">
@@ -799,10 +842,17 @@
             </div>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
 </body>
 
