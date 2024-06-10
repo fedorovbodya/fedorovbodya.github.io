@@ -20,6 +20,21 @@ footer {
 nav{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .nav-link{
+    width: 30%;
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 500px) {
+  .nav-link{
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
 }
 
 .nav-link {
@@ -36,6 +51,7 @@ nav{
 .dropdown-menu{
   background-color: #b3dcfd;
   text-decoration: none;
+  z-index: 3000;
 }
 .dropdown-item{
   text-decoration: none;
