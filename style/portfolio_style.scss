@@ -1,0 +1,140 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100vw;
+}
+
+.lime {
+    background-color: $primary-background;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.container-navigate {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+
+.logo {
+    gap: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: $text-intro;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+}
+
+nav {
+    gap: 30px;
+    display: flex;
+}
+
+.nav-item {
+    @include sub-head;
+    text-decoration: none;
+    color: $text-intro;
+    text-align: right;
+}
+
+.btn {
+    @include btn;
+    background-color: $ground-btn;
+    cursor: pointer;
+}
+
+.btn-text {
+    @include btn-text;
+    color: $btn-text;
+}
+
+
+.container-works {
+    @extend .container;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 100px;
+}
+
+.works-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 411px;
+}
+
+.label {
+    @include label;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary-background;
+}
+
+.works-title {
+    @include title;
+    text-align: center;
+}
+
+.works-text {
+    @include sub-head;
+    text-align: center;
+}
+
+.works-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.works-row {
+    display: flex;
+    gap: 55px;
+}
+
+.footer-content {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyrite {
+    @include sub-head;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}

@@ -1,0 +1,160 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100vw;
+}
+
+.lime {
+    background-color: $primary-background;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.container-navigate {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+
+.logo {
+    gap: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: $text-intro;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+}
+
+nav {
+    gap: 30px;
+    display: flex;
+}
+
+.nav-item {
+    @include sub-head;
+    text-decoration: none;
+    color: $text-intro;
+    text-align: right;
+}
+
+.btn {
+    @include btn;
+    background-color: $ground-btn;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-text {
+    @include btn-text;
+    color: $btn-text;
+}
+
+.container-contact {
+    @extend .container;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 411px;
+    margin-bottom: 67px;
+}
+
+.contact-title {
+    @include title;
+    text-align: center;
+    color: #000000;
+
+}
+
+.contact-text {
+    @include sub-head;
+    text-align: center;
+}
+
+.container-form {
+    @extend .container;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 93px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 575px;
+
+}
+
+.form-row>input {
+    border: 1px solid #000000;
+    background: #EEEEEE;
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+}
+
+.form-row>textarea {
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: #EEEEEE;
+}
+
+.footer-content {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyrite {
+    @include sub-head;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}

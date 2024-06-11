@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100vw;
+}
+
+.lime {
+  background-color: #74C69D;
+}
+
+.container, .footer-content, .container-plans-card, .container-plans, .container-navigate {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.container-navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.logo {
+  gap: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  color: #ffffff;
+  font-family: Work Sans;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
+}
+
+nav {
+  gap: 30px;
+  display: flex;
+}
+
+.nav-item {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: right;
+}
+
+.btn {
+  width: 170px;
+  height: 48px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #212529;
+  cursor: pointer;
+}
+
+.btn-text {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container-plans {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 78px;
+}
+
+.plans-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 411px;
+}
+
+.label {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #74C69D;
+}
+
+.plans-title {
+  font-family: Crimson Text;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.plans-text {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.container-plans-card {
+  display: flex;
+  gap: 105px;
+  margin-bottom: 135px;
+}
+
+.card {
+  display: flex;
+  padding: 46px 30px;
+  text-align: start;
+  box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+}
+
+.card-inner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.plan-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-name {
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.75px;
+  padding-bottom: 10px;
+  color: #000000;
+  padding-bottom: 0;
+}
+
+.plan-price {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.plan-price > h2 {
+  font-family: Crimson Text;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+.plan-price > p {
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.75px;
+  padding-bottom: 10px;
+  color: rgba(33, 37, 41, 0.5019607843);
+}
+
+.plan-info {
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.75px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: rgba(33, 37, 41, 0.5019607843);
+}
+
+.plan-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.plan-advantage {
+  display: flex;
+  gap: 11px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyrite {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=services_style.css.map */
