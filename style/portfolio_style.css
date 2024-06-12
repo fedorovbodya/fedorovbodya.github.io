@@ -114,6 +114,12 @@ nav {
   padding-bottom: 10px;
   text-align: center;
 }
+@media (max-width: 375px) {
+  .works-title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
 
 .works-text {
   font-family: Work Sans;

@@ -114,6 +114,12 @@ nav {
   padding-bottom: 10px;
   text-align: center;
 }
+@media (max-width: 375px) {
+  .plans-title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
 
 .plans-text {
   font-family: Work Sans;
@@ -188,6 +194,12 @@ nav {
   line-height: 50px;
   padding-bottom: 10px;
   color: #000000;
+}
+@media (max-width: 375px) {
+  .plan-price > h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
 }
 
 .plan-price > p {
