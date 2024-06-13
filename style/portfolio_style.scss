@@ -6,7 +6,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.row-element{
+    width: 20%;
+}
+.carousel-one{
+    z-index: 4;
+}
+.carousel-item>img{
+    width: 100%;
+}
 .wrap {
     width: 100vw;
 }
@@ -16,9 +24,13 @@
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     max-width: 1180px;
+    @media (max-width: 500px) {
+        width: auto;
+        margin: 0 20px 0;
+    }
 }
 
 .container-navigate {
@@ -26,15 +38,103 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    position: relative;
+    padding: 35px 0;
+    @media (max-width: 500px) {
+        padding: 21px 20px;
+    }
+}
 
+.container-navigate>nav {
+    @media (max-width: 500px) {
+        flex-direction: column;
+        position: fixed;
+        top: -350px;
+        transition: top .2s;
+        z-index: 2;
+        background-color: $primary-background;
+        width: 100vw;
+        align-items: center;
+        border-bottom: 3px solid $text-intro;
+        padding: 100px 10px 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: $text-intro;
+        background-color: $primary-background;
+        padding: 5px;
+        cursor: pointer;
+        transition: top .23s;
+        z-index: 3;
+        width: 35px;
+        height: 35px;
+        overflow: visible;
+    }
+
+    .btn-nav span {
+        display: block;
+        height: 2px;
+        background-color: $text-intro;
+        transition: all .1s linear .23s;
+        position: relative;
+        width: 24px;
+    }
+
+    .btn-nav span.first {
+        margin-top: 0;
+    }
+
+    .navigation-ticker:checked~.btn-nav {
+        background-color: $primary-background;
+    }
+
+    .navigation-ticker:checked~.navigation {
+        top: 0;
+    }
+
+    .navigation-ticker:checked~.btn-nav span.first {
+        transform: rotate(45deg);
+        top: 8.5px;
+        background-color: $text-intro;
+    }
+
+    .navigation-ticker:checked~.btn-nav span.second {
+        opacity: 0;
+    }
+
+    .navigation-ticker:checked~.btn-nav span.third {
+        transform: rotate(-45deg);
+        top: -8.5px;
+        background-color: $text-intro;
+    }
+}
+
+.navigation-ticker {
+    display: none;
 }
 
 .logo {
     gap: 18px;
     display: flex;
     align-items: center;
+
+    @media (max-width: 500px) {
+        gap: 10px;
+    }
+}
+
+.logo>img {
+    @media (max-width: 500px) {
+        width: 45px;
+        height: 31.06px;
+    }
+
 }
 
 .brand {
@@ -44,6 +144,11 @@
     font-weight: 500;
     line-height: 50px;
     text-align: left;
+
+    @media (max-width: 500px) {
+        font-size: 30px;
+        line-height: 37.5px;
+    }
 }
 
 nav {
@@ -75,10 +180,13 @@ nav {
     padding-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     gap: 55px;
-    margin-bottom: 100px;
+    margin-bottom: 82px;
+    @media (max-width: 500px) {
+        gap: 16px;
+        padding-top: 34px;
+    }
 }
 
 .works-info {
@@ -88,53 +196,87 @@ nav {
     justify-content: space-between;
     gap: 16px;
     max-width: 411px;
+    @media (max-width: 500px) {
+        max-width: 335px;
+    }
+    >.label {
+        @include label;
+        text-transform: uppercase;
+        text-align: center;
+        color: $primary-background;
+    }
+    >.works-title {
+        @include title;
+        text-align: center;
+    
+    }
+    >.works-text {
+        @include sub-head;
+        text-align: center;
+    }
+    >h4,h2,p{
+        @media (max-width: 500px) {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
-.label {
-    @include label;
-    text-transform: uppercase;
-    text-align: center;
-    color: $primary-background;
-}
 
-.works-title {
-    @include title;
-    text-align: center;
-}
 
-.works-text {
-    @include sub-head;
-    text-align: center;
-}
-
-.works-preview {
+.container-preview {
+    @extend .container;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 55px;
+    margin-bottom: 64px;
 }
 
 .works-row {
     display: flex;
     gap: 55px;
 }
+.container-three{
+    @extend .container;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 100px;
 
+}
 .footer-content {
     @extend .container;
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
     padding-top: 50px;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        padding: 31px 0;
+        margin: 0;
+        gap: 20px;
+    }
 }
 
 .icon {
     display: flex;
     align-items: center;
     gap: 20px;
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
 }
 
-.copyrite {
+.copyrite>h3 {
     @include sub-head;
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
 }
